@@ -1,0 +1,19 @@
+html, body, div, nav, section, article, h1, h2, h3, p, a, em, 
+img, strong, u, i, dl, dt, dd, ol, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+a, button {
+    text-decoration: none;
+    color: black;
+}
+ol, ul {
+    list-style: none;
+}
+form, fieldset {
+    border: none;
+}

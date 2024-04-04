@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Bebas+Neue&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Bebas+Neue&family=Dongle&family=Lobster&display=swap');
+
+body {
+    font-family: "Anta", sans-serif;
+    margin: 1.5em;
+    background-color: rgb(23, 53, 86);
+    color: white;
+}
+
+form {
+    background-color: rgb(9, 33, 60);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+        "blog"
+        "title"
+        "content"
+        "button";
+    place-items: center;
+    padding: 1em;
+    margin: 0;
+}
+
+legend {
+    grid-area: blog;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.6em;
+    color:rgb(223, 190, 231);
+    text-align: center;
+    padding: 0.5em;
+}
+
+label {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.2em;
+    color:rgb(223, 190, 231);
+    text-align: left;
+    padding: 0.2em 0;
+}
+
+.title, .content {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "label"
+        "text";
+}
+
+.title {
+    grid-area: title;
+}
+
+.content {
+    grid-area: content;
+}
+
+#titleL, #contentL {
+    grid-area: label;
+    margin: 0.8em;
+}
+
+#title, #content {
+    grid-area: text;
+    font-family: "Dongle", sans-serif;
+    font-size: 2em;
+    color:rgb(223, 190, 231);
+    padding: 0.2em 0.5em;
+    width: 15em;
+}
+
+#title {
+    height: 1.4em;
+}
+
+#content {
+    height: 5em;
+}
+
+::placeholder {
+    color: rgb(198, 186, 198);
+    text-align: left;
+}
+
+input[type="submit"],button {
+    font-family: "Anta", sans-serif;
+    color: black;
+    background-color: rgb(223, 190, 231);
+    border: solid 0.1em rgb(223, 190, 231);
+    padding: 0.6em 3em;
+    margin: 1em 2em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.buttons {
+    grid-area: button;
+    text-align: center;
+}

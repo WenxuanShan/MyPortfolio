@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Bebas+Neue&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Bebas+Neue&family=Dongle&family=Lobster&display=swap');
+
+body {
+    font-family: "Anta", sans-serif;
+    margin: 1.5em;
+    background-color: rgb(23, 53, 86);
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 5rem auto auto;
+    grid-template-areas: 
+            "head head head"
+            "AQ AQ AQ"
+            "foot foot foot";
+    grid-gap: 0;
+    margin: 0;
+    padding: 0.1rem;
+}
+
+
+header {
+    grid-area: head;
+    display: grid;
+    grid-template-columns: 11rem auto auto;
+    grid-template-areas: "name nav welcome";
+    align-items: center;
+    background-color: rgb(9, 33, 60);
+    color: white;
+}
+
+h1 {
+    grid-area: name;
+    font-family: "Lobster", sans-serif;
+    font-size: 1.5rem;
+    margin-left: 0.5em;
+}
+
+#headerNav a{
+    color: white;
+}
+
+#headerNav ul {
+    grid-area: nav;
+    display: flex;
+    gap: 0.7rem;   
+}
+
+h3 {
+    text-align: left;
+    font-size: 1.6em;
+    font-family: "Bebas Neue", sans-serif;
+    color:rgb(223, 190, 231);
+}
+
+li {
+    font-size: 1.05em;
+    margin: 0.1em 0;
+}
+
+em {
+    font-weight: bolder;
+    color: rgb(255, 184, 203);
+}
+
+p {
+    font-family: "Dongle", sans-serif;
+    font-size: 1.5em;
+    color: rgb(198, 186, 198);
+    padding: 0 0.8em;
+}
+
+#AwardsAndQualifications {
+    grid-area: AQ;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    margin: 1em 2em;
+}
+
+footer {
+    grid-area: foot;
+    text-align: center;
+    background-color: rgb(9, 33, 60);
+    padding: 1em;
+}
